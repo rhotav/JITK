@@ -31,7 +31,7 @@ This process presents the communication between the compiler and the program to 
 ## Commands
 
 | Parameter | Description                |
-| :--------  :------------------------- |
+| -------- | ------------------------- |
 | `quit` | Suspend JIT Killer |
 | `infoa` | Get assembly info of target module. |
 | `clear` | Clear Console |
