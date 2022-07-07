@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EC28F37B-89C4-42AA-97CD-AFDCE7A7A818}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>JITK</RootNamespace>
+    <AssemblyName>JITK</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dis2Msil, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dis2Msil\Dis2Msil\bin\Debug\Dis2Msil.dll</HintPath>
+    </Reference>
+    <Reference Include="dnlib, Version=3.3.3.0, Culture=neutral, PublicKeyToken=50e96378b6e77999, processorArchitecture=MSIL">
+      <HintPath>..\packages\dnlib.3.3.3\lib\net45\dnlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Sharprompt, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Sharprompt-2.3.0\Sharprompt\bin\Debug\netstandard2.0\Sharprompt.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Command\About.cs" />
+    <Compile Include="Core\Command\Clear.cs" />
+    <Compile Include="Core\Command\Command.cs" />
+    <Compile Include="Core\Command\CommandEngine.cs" />
+    <Compile Include="Core\Command\Continue.cs" />
+    <Compile Include="Core\Command\DefBreakPoint.cs" />
+    <Compile Include="Core\Command\Disas.cs" />
+    <Compile Include="Core\Command\DisasH.cs" />
+    <Compile Include="Core\Command\FileArgument.cs" />
+    <Compile Include="Core\Command\FileAssign.cs" />
+    <Compile Include="Core\Command\FileClear.cs" />
+    <Compile Include="Core\Command\Help.cs" />
+    <Compile Include="Core\Command\InfoA.cs" />
+    <Compile Include="Core\Command\InfoF.cs" />
+    <Compile Include="Core\Command\ListBreakpoint.cs" />
+    <Compile Include="Core\Command\Quit.cs" />
+    <Compile Include="Core\Command\StepFuncG.cs" />
+    <Compile Include="Core\Context.cs" />
+    <Compile Include="Core\SJITHook\Data.cs" />
+    <Compile Include="Core\SJITHook\JITHook64.cs" />
+    <Compile Include="Core\SJITHook\MscorjitAddrProvider.cs" />
+    <Compile Include="Core\SJITHook\ClrjitAddrProvider.cs" />
+    <Compile Include="Core\SJITHook\JITHook.cs" />
+    <Compile Include="Core\SJITHook\VTableAddrProvider.cs" />
+    <Compile Include="Core\Style.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
