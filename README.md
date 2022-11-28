@@ -55,7 +55,6 @@ This process presents the communication between the compiler and the program to 
 - [@Washi1337](https://www.github.com/Washi1337) For the information it gives about the compiler and the problems it solves.
 - [@shibayan](https://www.github.com/shibayan) For [Sharprompt](https://github.com/shibayan/Sharprompt) and for quickly merging my improvements on Sharprompt
 - [@0xd4d](https://www.github.com/0xd4d) For [dnlib](https://github.com/0xd4d/dnlib)
-- [@ALW1EZ](https://github.com/ALW1EZ) For psychological support
 - [@maddnias](https://github.com/maddnias) For [SJITHook](https://github.com/maddnias/SJITHook)
 - All RTN members
 
