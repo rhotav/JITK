@@ -1,7 +1,7 @@
 
 # JITK - JIT Killer
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSES)
-![files](https://img.shields.io/github/directory-file-count/polynomen/JITK)
+![files](https://img.shields.io/github/directory-file-count/rhotav/JITK)
 
 ```
        _ _____ _______ _  __
@@ -11,7 +11,7 @@
  | |__| |_| |_   | |  | . \ 
   \____/|_____|  |_|  |_|\_\
                             
-        by polynomen
+        by rhotav
 ```
 
 JIT Killer is hooker for clrjit.dll

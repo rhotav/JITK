@@ -30,7 +30,7 @@ namespace JITK.Core
             keywords.Add("HasResources:", ConsoleColor.White);
             keywords.Add("HasExportedTypes:", ConsoleColor.White);
             keywords.Add("JITK", ConsoleColor.DarkRed);
-            keywords.Add("polynomen", ConsoleColor.DarkGray);
+            keywords.Add("rhotav", ConsoleColor.DarkGray);
             keywords.Add("Name:", ConsoleColor.White);
             keywords.Add("Token:", ConsoleColor.DarkMagenta);
             keywords.Add("ID:", ConsoleColor.DarkMagenta);

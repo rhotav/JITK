@@ -18,7 +18,7 @@ namespace JITK
  | |__| |_| |_   | |  | . \ 
   \____/|_____|  |_|  |_|\_\
                             
-        by polynomen";
+        by rhotav";
 
 
         static void Main(string[] args)

@@ -9,7 +9,7 @@ namespace JITK.Core.Command
         override public ArgumentSize ArgSize { get { return ArgumentSize.None; } }
         override public void Action()
         {
-            Style.WriteFormatted("JITK - JIT Killer is hooker for clrjit. Created by polynomen \n github.com/polynomen \n", ConsoleColor.Blue);
+            Style.WriteFormatted("JITK - JIT Killer is hooker for clrjit. Created by rhotav \n github.com/rhotav \n", ConsoleColor.Blue);
         }
     }
 }
